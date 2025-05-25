@@ -6,22 +6,26 @@ const CultivationSection = () => {
     {
       step: "01",
       title: "Preparación del Ecosistema",
-      description: "Sustrato especial que replica las condiciones exactas de los lechos de ríos montañosos japoneses con minerales volcánicos."
+      description: "Sustrato especial que replica las condiciones exactas de los lechos de ríos montañosos japoneses con minerales volcánicos.",
+      image: "/lovable-uploads/e0e9cc05-8eba-4ad2-93e7-527181d7c1eb.png"
     },
     {
       step: "02", 
       title: "Hidroponía de Precisión",
-      description: "Sistema de agua corriente purificada con circulación constante, proporcionando nutrientes específicos monitoreados por IA."
+      description: "Sistema de agua corriente purificada con circulación constante, proporcionando nutrientes específicos monitoreados por IA.",
+      image: "/lovable-uploads/742b1868-bec4-4486-8925-2cccbe20bd65.png"
     },
     {
       step: "03",
       title: "Control Ambiental Zen",
-      description: "Monitoreo 24/7 con sensores de alta precisión: temperatura, humedad, pH, luminosidad y calidad del agua en tiempo real."
+      description: "Monitoreo 24/7 con sensores de alta precisión: temperatura, humedad, pH, luminosidad y calidad del agua en tiempo real.",
+      image: "/lovable-uploads/d4b019ed-7074-4441-9f5c-e3ef6e93efa2.png"
     },
     {
       step: "04",
       title: "Cosecha Artesanal",
-      description: "Cada wasabi se cosecha manualmente cuando alcanza la madurez perfecta, garantizando máxima potencia y frescura."
+      description: "Cada wasabi se cosecha manualmente cuando alcanza la madurez perfecta, garantizando máxima potencia y frescura.",
+      image: "/lovable-uploads/989f875f-d3df-4f82-9a8e-604ad70d444f.png"
     }
   ];
 
@@ -55,6 +59,23 @@ const CultivationSection = () => {
             con <span className="text-gradient-gold font-medium">tecnología hidropónica de última generación</span>, 
             creando las condiciones perfectas para el wasabi auténtico.
           </p>
+        </div>
+
+        {/* Imagen principal del cultivo tradicional */}
+        <div className="mb-20 animate-fade-in">
+          <div className="relative group max-w-6xl mx-auto">
+            <div className="absolute -inset-2 bg-gradient-to-r from-zen-500 to-luxury-500 rounded-3xl blur opacity-30 group-hover:opacity-50 transition duration-1000"></div>
+            <img 
+              src="/lovable-uploads/cb4c53ee-df2c-4806-93a8-17d596f4dd15.png"
+              alt="Cultivo tradicional de wasabi en ambiente zen japonés" 
+              className="relative w-full h-auto rounded-2xl shadow-zen transform group-hover:scale-102 transition-transform duration-700"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent rounded-2xl"></div>
+            <div className="absolute bottom-6 left-6 text-white">
+              <h3 className="text-3xl font-display font-bold mb-2">Jardín Zen de Wasabi</h3>
+              <p className="text-lg opacity-90">Recreando el hábitat natural japonés en Gran Canaria</p>
+            </div>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
@@ -116,19 +137,27 @@ const CultivationSection = () => {
           </div>
         </div>
 
-        {/* Proceso de cultivo */}
+        {/* Proceso de cultivo mejorado con imágenes */}
         <div className="mb-20">
           <h3 className="text-4xl font-display font-semibold text-gradient-zen mb-12 text-center tracking-wide">
             Proceso Artesanal
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {processes.map((process, index) => (
-              <Card key={index} className="zen-card border-none hover:shadow-zen transition-all duration-500 animate-scale-in group hover:scale-105" style={{animationDelay: `${index * 0.15}s`}}>
-                <CardContent className="p-8 text-center h-full flex flex-col justify-between">
-                  <div>
-                    <div className="text-4xl font-bold text-gradient-gold mb-6 group-hover:scale-110 transition-transform duration-300">{process.step}</div>
-                    <h4 className="text-xl font-semibold text-gradient-zen mb-4 tracking-wide">{process.title}</h4>
+              <Card key={index} className="zen-card border-none hover:shadow-zen transition-all duration-500 animate-scale-in group hover:scale-105 overflow-hidden" style={{animationDelay: `${index * 0.15}s`}}>
+                <div className="aspect-video overflow-hidden relative">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
+                  <img 
+                    src={process.image} 
+                    alt={process.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute top-4 left-4 z-20">
+                    <div className="text-3xl font-bold text-gradient-gold">{process.step}</div>
                   </div>
+                </div>
+                <CardContent className="p-6 text-center">
+                  <h4 className="text-lg font-semibold text-gradient-zen mb-3 tracking-wide">{process.title}</h4>
                   <p className="text-medium-contrast leading-relaxed text-sm">{process.description}</p>
                 </CardContent>
               </Card>

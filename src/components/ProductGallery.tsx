@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 const ProductGallery = () => {
   const products = [
     {
-      image: "/lovable-uploads/47b3289f-4ed1-4883-9255-44413206deba.png",
+      image: "/lovable-uploads/605e445a-8bfe-4325-90b4-0a05fb70b188.png",
       title: "Wasabi Premium Fresco",
       subtitle: "本わさび - Rizoma Auténtico",
       description: "Rizoma fresco recién cosechado, listo para rallar en el momento. Intensidad y frescura incomparables.",
@@ -13,7 +13,7 @@ const ProductGallery = () => {
       price: "A consultar"
     },
     {
-      image: "/lovable-uploads/6277c40e-107d-41cb-8603-13202f0b2773.png",
+      image: "/lovable-uploads/77a73f96-74d2-42c6-9121-9230935ddf7a.png",
       title: "Hojas de Wasabi Gourmet",
       subtitle: "わさびの葉 - Hojas Premium",
       description: "Hojas tiernas perfectas para ensaladas, tempura y guarniciones. Sabor único y propiedades antioxidantes.",
@@ -21,12 +21,25 @@ const ProductGallery = () => {
       price: "A consultar"
     },
     {
-      image: "/lovable-uploads/15aba063-6235-48ee-8bfd-cb9a41b31bdf.png",
+      image: "/lovable-uploads/9694e3ba-48d8-475e-9f8b-22d8baa5755a.png",
       title: "Experiencia Wasabi Zen",
       subtitle: "禅の体験 - Gift Box Premium",
       description: "Presentación exclusiva en caja de madera japonesa con wasabi fresco, rallador tradicional y guía gastronómica.",
       features: ["Caja artesanal japonesa", "Rallador de tiburón", "Guía gastronómica"],
       price: "A consultar"
+    }
+  ];
+
+  const wasabiUses = [
+    {
+      image: "/lovable-uploads/61900add-70bc-47d0-93e8-114a434ac4d7.png",
+      title: "Experiencia Sushi Auténtica",
+      description: "El acompañamiento perfecto para sushi y sashimi premium. Realza los sabores naturales del pescado."
+    },
+    {
+      image: "/lovable-uploads/5122542d-e351-4d99-be6e-d3073aeb9f72.png",
+      title: "Preparación Tradicional",
+      description: "Wasabi fresco rallado con oroshi tradicional. Técnica ancestral para máximo sabor y aroma."
     }
   ];
 
@@ -67,6 +80,27 @@ const ProductGallery = () => {
             <span className="text-gradient-zen font-medium"> máxima frescura</span> y 
             <span className="text-gradient-gold font-medium"> calidad excepcional</span> que caracteriza nuestros cultivos artesanales.
           </p>
+        </div>
+
+        {/* Sección de usos gastronómicos */}
+        <div className="grid lg:grid-cols-2 gap-12 mb-20">
+          {wasabiUses.map((use, index) => (
+            <div key={index} className="relative group animate-fade-in">
+              <div className="absolute -inset-2 bg-gradient-to-r from-zen-500 to-luxury-500 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+              <div className="relative overflow-hidden rounded-2xl">
+                <img 
+                  src={use.image} 
+                  alt={use.title}
+                  className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div className="absolute bottom-6 left-6 right-6 text-white">
+                  <h3 className="text-2xl font-display font-bold mb-3">{use.title}</h3>
+                  <p className="text-lg opacity-90 leading-relaxed">{use.description}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
 
         <div className="grid lg:grid-cols-3 gap-10 mb-20">

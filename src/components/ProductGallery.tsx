@@ -6,50 +6,50 @@ const ProductGallery = () => {
   const products = [
     {
       image: "/lovable-uploads/605e445a-8bfe-4325-90b4-0a05fb70b188.png",
-      title: "Wasabi Premium Fresco",
-      subtitle: "本わさび - Rizoma Auténtico",
-      description: "Rizoma fresco recién cosechado, listo para rallar en el momento. Intensidad y frescura incomparables.",
-      features: ["Cosecha semanal", "Envío refrigerado", "Certificado de autenticidad"],
-      price: "A consultar"
+      title: "Rizoma de Wasabi Fresco",
+      subtitle: "本わさび - Wasabi Auténtico",
+      description: "Rizoma recién cosechado, listo para rallar. Intensidad y frescura incomparables del auténtico wasabi japonés.",
+      features: ["Cosecha bajo pedido", "Envío refrigerado 24h", "Certificado de autenticidad"],
+      price: "Consultar precio"
     },
     {
       image: "/lovable-uploads/77a73f96-74d2-42c6-9121-9230935ddf7a.png",
-      title: "Hojas de Wasabi Gourmet",
-      subtitle: "わさびの葉 - Hojas Premium",
-      description: "Hojas tiernas perfectas para ensaladas, tempura y guarniciones. Sabor único y propiedades antioxidantes.",
-      features: ["Cosecha diaria", "Perfectas para tempura", "Rica en vitaminas"],
-      price: "A consultar"
+      title: "Hojas de Wasabi Premium",
+      subtitle: "わさびの葉 - Hojas Frescas",
+      description: "Hojas tiernas perfectas para ensaladas gourmet, tempura y como guarnición aromática única.",
+      features: ["Cosecha diaria", "Ideales para tempura", "Alto contenido nutricional"],
+      price: "Consultar precio"
     },
     {
       image: "/lovable-uploads/9694e3ba-48d8-475e-9f8b-22d8baa5755a.png",
-      title: "Experiencia Wasabi Zen",
-      subtitle: "禅の体験 - Gift Box Premium",
-      description: "Presentación exclusiva en caja de madera japonesa con wasabi fresco, rallador tradicional y guía gastronómica.",
-      features: ["Caja artesanal japonesa", "Rallador de tiburón", "Guía gastronómica"],
-      price: "A consultar"
+      title: "Kit Wasabi Experience",
+      subtitle: "和食体験 - Experiencia Completa",
+      description: "Set completo con wasabi fresco, rallador tradicional oroshi y guía de uso gastronómico profesional.",
+      features: ["Rallador oroshi incluido", "Guía gastronómica", "Presentación regalo"],
+      price: "Consultar precio"
     }
   ];
 
-  const wasabiUses = [
+  const applications = [
     {
       image: "/lovable-uploads/61900add-70bc-47d0-93e8-114a434ac4d7.png",
-      title: "Experiencia Sushi Auténtica",
-      description: "El acompañamiento perfecto para sushi y sashimi premium. Realza los sabores naturales del pescado."
+      title: "Alta Gastronomía",
+      description: "El acompañamiento perfecto para sushi, sashimi y pescados premium. Realza los sabores naturales sin enmascararlos."
     },
     {
       image: "/lovable-uploads/5122542d-e351-4d99-be6e-d3073aeb9f72.png",
       title: "Preparación Tradicional",
-      description: "Wasabi fresco rallado con oroshi tradicional. Técnica ancestral para máximo sabor y aroma."
+      description: "Rallado fresco con técnica japonesa tradicional. El oroshi de piel de tiburón extrae máximo sabor y aroma."
     }
   ];
 
-  const certifications = [
+  const benefits = [
     "🌱 100% Wasabia japonica certificado",
-    "❄️ Cadena de frío garantizada",
+    "❄️ Cadena de frío asegurada",
     "📦 Entrega 24-48h península",
-    "🎌 Métodos tradicionales japoneses",
+    "🎌 Técnicas tradicionales japonesas",
     "🔬 Control de calidad extremo",
-    "♻️ Cultivo sostenible y ecológico"
+    "♻️ Cultivo sostenible"
   ];
 
   const scrollToContact = () => {
@@ -61,7 +61,7 @@ const ProductGallery = () => {
 
   return (
     <section className="py-24 bg-dark-zen relative overflow-hidden">
-      {/* Elementos zen de fondo */}
+      {/* Elementos de fondo sutiles */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-1/4 w-64 h-64 bg-gradient-radial from-zen-400/40 to-transparent rounded-full blur-2xl animate-float"></div>
         <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-gradient-radial from-luxury-400/40 to-transparent rounded-full blur-2xl animate-float" style={{animationDelay: '3s'}}></div>
@@ -70,33 +70,33 @@ const ProductGallery = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-20 animate-fade-in">
           <div className="font-japanese text-zen-400 text-lg tracking-wider mb-4 text-medium-contrast">
-            高級製品
+            製品ライン
           </div>
           <h2 className="text-5xl md:text-7xl font-display font-bold text-gradient-gold mb-8 tracking-wider">
-            Productos Gourmet
+            Productos Premium
           </h2>
           <p className="text-xl md:text-2xl text-high-contrast max-w-4xl mx-auto leading-relaxed font-light">
-            Ofrecemos wasabi auténtico en diferentes presentaciones premium, siempre con la 
+            Ofrecemos wasabi auténtico en diferentes formatos gourmet, siempre con la 
             <span className="text-gradient-zen font-medium"> máxima frescura</span> y 
-            <span className="text-gradient-gold font-medium"> calidad excepcional</span> que caracteriza nuestros cultivos artesanales.
+            <span className="text-gradient-gold font-medium"> calidad excepcional</span> que caracteriza nuestro cultivo artesanal.
           </p>
         </div>
 
-        {/* Sección de usos gastronómicos */}
+        {/* Sección de aplicaciones gastronómicas */}
         <div className="grid lg:grid-cols-2 gap-12 mb-20">
-          {wasabiUses.map((use, index) => (
+          {applications.map((app, index) => (
             <div key={index} className="relative group animate-fade-in">
               <div className="absolute -inset-2 bg-gradient-to-r from-zen-500 to-luxury-500 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
               <div className="relative overflow-hidden rounded-2xl">
                 <img 
-                  src={use.image} 
-                  alt={use.title}
+                  src={app.image} 
+                  alt={app.title}
                   className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6 text-white">
-                  <h3 className="text-2xl font-display font-bold mb-3">{use.title}</h3>
-                  <p className="text-lg opacity-90 leading-relaxed">{use.description}</p>
+                  <h3 className="text-2xl font-display font-bold mb-3">{app.title}</h3>
+                  <p className="text-lg opacity-90 leading-relaxed">{app.description}</p>
                 </div>
               </div>
             </div>
@@ -145,24 +145,24 @@ const ProductGallery = () => {
           ))}
         </div>
 
-        {/* Sección de calidad garantizada */}
+        {/* Sección de garantía de calidad */}
         <div className="glassmorphism rounded-3xl p-12 md:p-16 animate-fade-in">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-4xl font-display font-semibold text-gradient-gold mb-8 tracking-wide">
-                Garantía de Excelencia
+                Garantía de Calidad
               </h3>
               <div className="font-japanese text-zen-400 text-sm tracking-wider mb-6 text-medium-contrast">
                 品質保証 - Hinshitsu Hoshō
               </div>
               <p className="text-lg text-high-contrast mb-8 leading-relaxed">
-                Cada wasabi pasa por controles de calidad extremos. Desde la selección de semillas hasta 
-                la entrega final, garantizamos la máxima frescura, autenticidad y pureza en cada producto.
+                Cada producto pasa por controles de calidad rigurosos. Desde la selección hasta 
+                la entrega, garantizamos la máxima frescura, autenticidad y pureza en cada envío.
               </p>
               <div className="space-y-4">
-                {certifications.slice(0, 3).map((cert, index) => (
+                {benefits.slice(0, 3).map((benefit, index) => (
                   <div key={index} className="flex items-center space-x-3">
-                    <span className="text-lg text-medium-contrast">{cert}</span>
+                    <span className="text-lg text-medium-contrast">{benefit}</span>
                   </div>
                 ))}
               </div>
@@ -170,25 +170,25 @@ const ProductGallery = () => {
             
             <div>
               <h4 className="text-3xl font-semibold text-gradient-zen mb-8 tracking-wide">
-                Estándares Premium
+                Nuestros Estándares
               </h4>
               <div className="space-y-4 mb-8">
-                {certifications.slice(3).map((cert, index) => (
+                {benefits.slice(3).map((benefit, index) => (
                   <div key={index} className="flex items-center space-x-3">
-                    <span className="text-lg text-medium-contrast">{cert}</span>
+                    <span className="text-lg text-medium-contrast">{benefit}</span>
                   </div>
                 ))}
               </div>
               
               <div className="bg-zen-gradient p-8 rounded-2xl text-center">
                 <p className="font-semibold text-xl text-white mb-2 tracking-wide">
-                  "Del cultivo zen a tu mesa gourmet"
+                  "Del cultivo a tu mesa en menos de 48 horas"
                 </p>
                 <div className="font-japanese text-zen-200 text-sm tracking-wider">
-                  禅から美食へ
+                  栽培から食卓まで48時間以内
                 </div>
                 <p className="text-zen-100 text-sm mt-4">
-                  Menos de 48 horas desde la cosecha
+                  Frescura garantizada en cada entrega
                 </p>
               </div>
             </div>
@@ -202,7 +202,7 @@ const ProductGallery = () => {
             size="lg"
             className="bg-gold-luxury hover:opacity-90 text-dark-900 font-semibold px-12 py-4 text-lg shadow-luxury transition-all duration-300 hover:scale-105 tracking-wide"
           >
-            Experiencia Wasabi Gourmet
+            Solicitar Información
           </Button>
           <p className="text-soft-contrast text-sm mt-4 tracking-wider">
             Descubre el auténtico sabor del wasabi japonés

@@ -5,42 +5,42 @@ const TechnologySection = () => {
   const technologies = [
     {
       icon: "🌡️",
-      title: "Sensores IoT Avanzados",
-      description: "Monitoreo continuo 24/7 de pH, temperatura, humedad, luminosidad y nutrientes con precisión milimétrica.",
-      specs: ["pH: ±0.1 exactitud", "Temp: ±0.5°C", "Humedad: ±2%"]
+      title: "Monitoreo Continuo",
+      description: "Sensores de precisión que controlan pH, temperatura, humedad y nutrientes las 24 horas del día.",
+      specs: ["Precisión ±0.1 pH", "Temp ±0.5°C", "Humedad ±2%"]
     },
     {
       icon: "🤖",
-      title: "Automatización Inteligente",
-      description: "Sistemas de IA que ajustan automáticamente riego, nutrición y clima según las necesidades específicas de cada planta.",
-      specs: ["24/7 Operativo", "Auto-ajuste IA", "Alertas instantáneas"]
+      title: "Control Automatizado",
+      description: "Sistema inteligente que ajusta automáticamente riego, nutrición y condiciones ambientales.",
+      specs: ["Respuesta inmediata", "Ajustes automáticos", "Alertas en tiempo real"]
     },
     {
       icon: "📱",
-      title: "Control Remoto Total",
-      description: "Aplicación móvil avanzada para supervisión y control desde cualquier ubicación del mundo.",
-      specs: ["Tiempo real", "Históricos completos", "Notificaciones push"]
+      title: "Supervisión Remota",
+      description: "Monitoreo y control total de las instalaciones desde cualquier ubicación mediante aplicación móvil.",
+      specs: ["Control 24/7", "Datos históricos", "Notificaciones"]
     },
     {
       icon: "🧠",
-      title: "Machine Learning",
-      description: "Algoritmos de aprendizaje automático que optimizan continuamente las condiciones de cultivo.",
-      specs: ["Predicción climática", "Optimización continua", "Mejora adaptativa"]
+      title: "Optimización IA",
+      description: "Algoritmos que aprenden y optimizan continuamente las condiciones de cultivo para máximo rendimiento.",
+      specs: ["Aprendizaje continuo", "Predicción climática", "Mejora adaptativa"]
     }
   ];
 
-  const certifications = [
-    "🌱 100% Cultivo Ecológico Certificado",
-    "⚡ 95% Energía Renovable Solar",
-    "💧 100% Agua Reciclada y Purificada",
-    "🔬 Laboratorio de Control Calidad",
-    "📊 Trazabilidad Blockchain Completa",
-    "♻️ Huella Carbono Neutral"
+  const sustainability = [
+    "🌱 Cultivo ecológico certificado",
+    "⚡ 90% energía solar renovable", 
+    "💧 Recirculación total del agua",
+    "🔬 Control de calidad constante",
+    "📊 Trazabilidad completa",
+    "♻️ Cero residuos tóxicos"
   ];
 
   return (
     <section id="tecnologia" className="py-24 bg-dark-zen relative overflow-hidden">
-      {/* Elementos zen de fondo */}
+      {/* Elementos de fondo sutiles */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-radial from-luxury-500/30 to-transparent rounded-full blur-3xl animate-float"></div>
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-radial from-zen-500/30 to-transparent rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
@@ -52,12 +52,12 @@ const TechnologySection = () => {
             先進技術
           </div>
           <h2 className="text-5xl md:text-7xl font-display font-bold text-gradient-gold mb-8 tracking-wider">
-            Innovación Tecnológica
+            Tecnología Avanzada
           </h2>
           <p className="text-xl md:text-2xl text-high-contrast max-w-4xl mx-auto leading-relaxed font-light">
-            Fusionamos la <span className="text-gradient-zen font-medium">sabiduría ancestral japonesa</span> con 
-            la <span className="text-gradient-gold font-medium">inteligencia artificial más avanzada</span>, 
-            creando el ecosistema de cultivo más sofisticado del mundo.
+            Combinamos la <span className="text-gradient-zen font-medium">sabiduría tradicional japonesa</span> con 
+            <span className="text-gradient-gold font-medium"> tecnología moderna de precisión</span>, 
+            creando un sistema de cultivo único y altamente eficiente.
           </p>
         </div>
 
@@ -67,7 +67,7 @@ const TechnologySection = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-zen-500 to-luxury-500 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
               <img 
                 src="/lovable-uploads/f3cfbfd9-fd64-40d5-8e48-2fa0d0c9a401.png" 
-                alt="Sistema de sensores IoT avanzado de Wasabios" 
+                alt="Sistema de control tecnológico avanzado" 
                 className="relative w-full h-auto rounded-2xl shadow-zen transform group-hover:scale-105 transition-transform duration-500"
               />
             </div>
@@ -76,36 +76,36 @@ const TechnologySection = () => {
           <div className="animate-slide-in-right space-y-8">
             <div>
               <h3 className="text-4xl font-display font-semibold text-gradient-gold mb-6 tracking-wide">
-                Precisión Nanométrica
+                Control de Precisión
               </h3>
               <div className="font-japanese text-zen-400 text-sm tracking-wider mb-6 text-medium-contrast">
-                ナノメートル精度 - Nanomētoru Seido
+                精密制御 - Seimitsu Seigyo
               </div>
             </div>
             
             <p className="text-lg text-high-contrast leading-relaxed">
-              Nuestro ecosistema de sensores IoT de última generación monitorea más de 47 parámetros 
-              ambientales en tiempo real. Cada microsegundo cuenta para mantener las condiciones 
-              perfectas que el wasabi necesita para desarrollar su característico sabor y potencia.
+              Nuestro sistema tecnológico monitorea más de 30 parámetros ambientales críticos. 
+              Cada variable es ajustada automáticamente para mantener las condiciones ideales 
+              que el wasabi necesita en cada etapa de su desarrollo.
             </p>
             
             <div className="grid grid-cols-2 gap-4">
               <div className="zen-card p-6 rounded-xl text-center group hover:scale-105 transition-transform duration-300">
-                <div className="text-3xl font-bold text-gradient-gold mb-2">99.7%</div>
-                <div className="text-sm text-soft-contrast tracking-wider">Precisión Sistema</div>
+                <div className="text-3xl font-bold text-gradient-gold mb-2">99.5%</div>
+                <div className="text-sm text-soft-contrast tracking-wider">Precisión</div>
               </div>
               <div className="zen-card p-6 rounded-xl text-center group hover:scale-105 transition-transform duration-300">
-                <div className="text-3xl font-bold text-gradient-zen mb-2">5 min</div>
-                <div className="text-sm text-soft-contrast tracking-wider">Frecuencia Monitoreo</div>
+                <div className="text-3xl font-bold text-gradient-zen mb-2">24/7</div>
+                <div className="text-sm text-soft-contrast tracking-wider">Monitoreo</div>
               </div>
             </div>
             
             <div className="glassmorphism p-8 rounded-2xl">
               <p className="font-semibold text-xl text-gradient-gold text-center tracking-wide mb-2">
-                "Cada variable controlada con precisión científica extrema"
+                "Tecnología al servicio de la tradición"
               </p>
               <div className="font-japanese text-center text-zen-400 text-sm tracking-wider">
-                科学的精密制御
+                伝統に奉仕する技術
               </div>
             </div>
           </div>
@@ -132,61 +132,61 @@ const TechnologySection = () => {
           ))}
         </div>
 
-        {/* Sección de sostenibilidad avanzada */}
+        {/* Sección de sostenibilidad */}
         <div className="glassmorphism rounded-3xl p-12 md:p-16 animate-fade-in">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-4xl font-display font-semibold text-gradient-gold mb-8 tracking-wide">
-                Sostenibilidad Extrema
+                Compromiso Ambiental
               </h3>
               <div className="font-japanese text-zen-400 text-sm tracking-wider mb-8 text-medium-contrast">
-                持続可能性 - Jizoku Kanōsei
+                環境への責任 - Kankyō e no Sekinin
               </div>
               <p className="text-lg text-high-contrast mb-8 leading-relaxed">
-                Nuestro compromiso con el medio ambiente va más allá de la sostenibilidad básica. 
-                Hemos creado un ecosistema de carbono negativo que regenera el entorno mientras 
-                produce el wasabi más puro del mundo.
+                Nuestro compromiso con la sostenibilidad va más allá del cultivo. Hemos diseñado 
+                un sistema completamente ecológico que respeta el entorno natural de Gran Canaria 
+                mientras produce wasabi de la más alta calidad.
               </p>
               <div className="grid grid-cols-3 gap-6">
                 <div className="zen-card p-6 rounded-2xl text-center group hover:scale-105 transition-transform duration-300">
-                  <div className="text-3xl font-bold text-gradient-zen mb-2">-15%</div>
-                  <div className="text-zen-300 text-sm tracking-wider">Carbono Negativo</div>
-                  <div className="font-japanese text-zen-400 text-xs mt-1">炭素負</div>
+                  <div className="text-3xl font-bold text-gradient-zen mb-2">90%</div>
+                  <div className="text-zen-300 text-sm tracking-wider">Solar</div>
+                  <div className="font-japanese text-zen-400 text-xs mt-1">太陽光</div>
                 </div>
                 <div className="zen-card p-6 rounded-2xl text-center group hover:scale-105 transition-transform duration-300">
                   <div className="text-3xl font-bold text-gradient-gold mb-2">100%</div>
-                  <div className="text-luxury-300 text-sm tracking-wider">Renovable</div>
-                  <div className="font-japanese text-zen-400 text-xs mt-1">再生可能</div>
+                  <div className="text-luxury-300 text-sm tracking-wider">Recirculado</div>
+                  <div className="font-japanese text-zen-400 text-xs mt-1">再循環</div>
                 </div>
                 <div className="zen-card p-6 rounded-2xl text-center group hover:scale-105 transition-transform duration-300">
                   <div className="text-3xl font-bold text-gradient-zen mb-2">0</div>
                   <div className="text-zen-300 text-sm tracking-wider">Residuos</div>
-                  <div className="font-japanese text-zen-400 text-xs mt-1">廃棄物ゼロ</div>
+                  <div className="font-japanese text-zen-400 text-xs mt-1">廃棄物</div>
                 </div>
               </div>
             </div>
             
             <div>
               <h4 className="text-3xl font-semibold text-gradient-zen mb-8 tracking-wide">
-                Certificaciones Premium
+                Certificaciones
               </h4>
               <div className="space-y-4 mb-8">
-                {certifications.map((cert, index) => (
+                {sustainability.map((item, index) => (
                   <div key={index} className="flex items-center space-x-4 p-4 zen-card rounded-xl hover:scale-105 transition-transform duration-300">
-                    <span className="text-lg text-medium-contrast">{cert}</span>
+                    <span className="text-lg text-medium-contrast">{item}</span>
                   </div>
                 ))}
               </div>
               
               <div className="bg-zen-gradient p-8 rounded-2xl text-center">
                 <p className="text-white text-xl font-medium tracking-wide mb-2">
-                  "Tecnología que honra la naturaleza"
+                  "Innovación responsable con la naturaleza"
                 </p>
                 <div className="font-japanese text-zen-200 text-sm tracking-wider mb-4">
-                  自然を敬う技術
+                  自然と調和する革新
                 </div>
                 <p className="text-zen-100 text-sm">
-                  Certificado por organismos internacionales de sostenibilidad
+                  Certificado por organismos ambientales europeos
                 </p>
               </div>
             </div>
